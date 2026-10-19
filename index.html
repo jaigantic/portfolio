@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junji Arceo | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-accent"></span>
+        Jaigantic.
+      </a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="btn-toggle">Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-container">
+        <div class="hero-image-wrapper">
+          <img src="pfp.jpeg" alt="Junji Arceo Profile Image" class="hero-img">
+        </div>
+        <div class="hero-text">
+          <span class="badge">Welcome to my portfolio</span>
+          <h1>Hello, I'm <span class="highlight">Junji Arceo</span></h1>
+          <p class="intro">I’m a college student exploring web development. Check out my projects and what I’m learning!</p>
+          <p id="current-datetime" class="datetime-display"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-header">
+              <span class="card-tag">01</span>
+              <h3>Personal Information</h3>
+            </div>
+            <p><strong>Name:</strong> Junji "Jai" Arceo</p>
+            <p><strong>Field:</strong> Information Technology</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-header">
+              <span class="card-tag">02</span>
+              <h3>Education</h3>
+            </div>
+            <p><strong>Degree:</strong> Bachelor of Science in Information Technology</p>
+            <p>Completed coursework in C++ programming, data structures, and computer networking.</p>
+          </div>
+
+          <div class="about-card full-width">
+            <div class="card-header">
+              <span class="card-tag">03</span>
+              <h3>Interests</h3>
+            </div>
+            <p id="short-interests">Films, music, arts, C++ algorithms, frontend development...</p>
+            <p id="full-interests" class="hidden-text">Films, music, arts, C++ algorithms, frontend development, hardware prototyping with Arduino, structured cabling, and relational databases.</p>
+            <button id="read-more-btn" class="btn-subtle">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Technical Skills</h3>
+            <ul class="skill-list">
+              <li>C++ Development & OOP</li>
+              <li>Data Structures & Algorithms</li>
+              <li>HTML / CSS / JavaScript</li>
+              <li>Database Management (MySQL)</li>
+              <li>Hardware Prototyping (Arduino)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Personal Skills</h3>
+            <ul class="skill-list">
+              <li>Problem Solving</li>
+              <li>Logical Thinking</li>
+              <li>Attention to Detail</li>
+              <li>Adaptability</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="projects-header">
+          <h2 class="section-title">Projects Showcase</h2>
+          <div class="carousel-controls">
+            <button id="prev-project" class="btn-nav-card" aria-label="Previous Project">&lt; Prev</button>
+            <span id="project-counter" class="project-counter">1 / 6</span>
+            <button id="next-project" class="btn-nav-card" aria-label="Next Project">Next &gt;</button>
+          </div>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+
+            <article class="project-card">
+              <div class="img-container">
+                <img src="alumni.jpeg" alt="Alumni Information System Preview">
+                <span class="project-tag">Desktop App</span>
+              </div>
+              <div class="project-body">
+                <h3>Junior High School Alumni Information System</h3>
+                <p class="project-summary">A desktop application designed to organize and manage alumni records of Caybiga High School.</p>
+                <div class="project-details hidden-text">
+                  <p>Features a searchable database for efficient record indexing alongside built-in chatbot support to make retrieving graduate information faster, easier, and more efficient.</p>
+                </div>
+                <button class="btn-card expand-btn">View More Details</button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="img-container">
+                <img src="sturya.jpeg" alt="Interactive Web Storybook Preview">
+                <span class="project-tag">Web Experience</span>
+              </div>
+              <div class="project-body">
+                <h3>Interactive Web Storybook</h3>
+                <p class="project-summary">A digital storybook platform built using HTML5, CSS3, and JavaScript featuring animated page flips.</p>
+                <div class="project-details hidden-text">
+                  <p>Includes interactive narrative choices, ambient background soundscapes, page-turn animations, and custom visual illustrations designed to create an engaging reader experience.</p>
+                </div>
+                <button class="btn-card expand-btn">View More Details</button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="img-container">
+                <img src="arduino.jpeg" alt="Water Coaster Prototype Preview">
+                <span class="project-tag">Hardware / IoT</span>
+              </div>
+              <div class="project-body">
+                <h3>Water Level Coaster</h3>
+                <p class="project-summary">An Arduino Nano prototype using non-contact TTP223 capacitive touch sensors and piezo alerts.</p>
+                <div class="project-details hidden-text">
+                  <p>Monitors liquid levels inside drinking vessels in real-time, providing color-coded visual thresholds and sound notifications for safety.</p>
+                </div>
+                <button class="btn-card expand-btn">View More Details</button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="img-container">
+                <img src="greet.jpeg" alt="Teachers Month Page Preview">
+                <span class="project-tag">Web App</span>
+              </div>
+              <div class="project-body">
+                <h3>Teachers' Month Page</h3>
+                <p class="project-summary">An interactive web application with background audio playback and custom appreciation cards.</p>
+                <div class="project-details hidden-text">
+                  <p>Built using HTML, CSS, and vanilla JS to deliver animated message cards with synchronized background music control.</p>
+                </div>
+                <button class="btn-card expand-btn">View More Details</button>
+              </div>
+            </article>
+
+             <article class="project-card">
+              <div class="img-container">
+                <img src="rating.jpeg" alt="Movie Rating System Preview">
+                <span class="project-tag">C++ CLI</span>
+              </div>
+              <div class="project-body">
+                <h3>Movie Rating System</h3>
+                <p class="project-summary">A command-line tool calculating weighted movie scores across plot, acting, score, and cinematography.</p>
+                <div class="project-details hidden-text">
+                  <p>Implements custom structured inputs, score weighting logic, and data validation to provide objective film evaluations.</p>
+                </div>
+                <button class="btn-card expand-btn">View More Details</button>
+              </div>
+            </article>
+
+            <article class="project-card active">
+              <div class="img-container">
+                <img src="tiket.jpg" alt="Concert Ticketing System Preview">
+                <span class="project-tag">C++ Application</span>
+              </div>
+              <div class="project-body">
+                <h3>Concert Ticketing System</h3>
+                <p class="project-summary">A C++ system designed to manage concert ticket purchases and reservations.</p>
+                <div class="project-details hidden-text">
+                  <p>It helps users select ticket tiers (VIP, Lower Box, General Admission), tracks seat availability in real time, calculates transactions with automatic discount applying, and simplifies the process of organizing concert bookings for event managers.</p>
+                </div>
+                <button class="btn-card expand-btn">View More Details</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="carousel-dots" id="carousel-dots">
+          <span class="dot-indicator active" data-slide="0"></span>
+          <span class="dot-indicator" data-slide="1"></span>
+          <span class="dot-indicator" data-slide="2"></span>
+          <span class="dot-indicator" data-slide="3"></span>
+          <span class="dot-indicator" data-slide="4"></span>
+          <span class="dot-indicator" data-slide="5"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Contact Information</h2>
+          <p>Feel free to get in touch for collaborations or inquiries.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="label">Email Address</span>
+              <span class="value">arceojunji@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="label">Phone Number</span>
+              <span class="value">+63 968 376 7660  |  +63 994 053 4384</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Junji Arceo. All rights reserved.</p>
+      <div class="palette-indicator">
+        <span class="swatch wine" title="Vintage Wine"></span>
+        <span class="swatch blue" title="Powder Blue"></span>
+        <span class="swatch cream" title="Cream White"></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top">Top &uarr;</button>
+
+  <script src="function.js"></script>
+</body>
+</html>
